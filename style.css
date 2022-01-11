@@ -76,12 +76,21 @@ h2{
     margin-left: -5%;
 }
 .background-meteo{
-    display:flex;
     background-color: #FFFFFF;
     width: 21.875rem;
     height: 20rem;
     border-radius: 1.875rem;
     margin-left: 20%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.separation-meteo{
+    margin-top: 45%;
+    border-color: #0296EA;
+}
+.ville{
+    font-size: Merriweather;
+    font-size: 1.563rem;
+    font-weight: bold;
 }
 
 /* 
@@ -95,6 +104,7 @@ h2{
 .horloge{
     margin-top: 4.563rem;
     width: 25%;
+    height: 10%;
 }
 .background-horloge{
     margin-left: 20%;
@@ -111,37 +121,70 @@ h2{
     height: 48%;
 }
 .rond{
-
     background-color: #000000;
     width: 16.5vw;
     height: 35vh;
     border-radius: 100%;
 }
-.minutes-container, .hours-container, .seconds-container {
+.clock {
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    border: 5px solid rgb(197, 197, 197);
+    box-shadow: inset 2px 3px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.wrap {
+    position: relative;
+    width: 250px;
+    height: 298px
+}
+.minute, .heure {
     position: absolute;
-    top: 0;
+    height: 100px; width: 6px;
+    margin: auto;
+    top: -33%; left: 55px;	bottom: 0; right: 0;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px 0 rgba(190, 190, 190, 0.4);
+    background: rgb(255, 255, 255);
+}
+.minute {
+    position: absolute;
+    height: 130px;
+    width: 4px;
+    top: -45%;
+    left: 55px;
+    box-shadow: 0 0 10px 0 rgba(170, 170, 170, 0.4);
+    transform: rotate(90deg);
+}
+.seconde {
+    position: absolute;
+    height: 120px;
+    width: 2px;
+    margin: auto;
+    top: -40%;
+    left: 55px;
+    bottom: 0;
+    right: 0;
+    border-radius: 4px;
+    background: #ff4b3e;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+}
+.dot {
+    position: absolute;
+    top: 0px;
+    left: 55px;
     right: 0;
     bottom: 0;
-    left: 0;
-  }
-  .hours {
-    position: absolute;
-    background: #FFFFFF;
-    height: 8%;
-    left: 44.2%;
-    top: 125%;
-    transform-origin: 25% 50%;
-    width: 0.5%;
-  }
-  .minutes {
-    position: absolute;
-    background: #FFFFFF;
-    height: 8%;
-    left: 44.2%;
-    top: 125%;
-    transform-origin: 25% 50%;
-    width: 0.5%;
-  }
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #1b1b1b;
+    border-radius: 50%;
+    margin: auto;
+}
 /* 
 
                 widget Générateur de mots de passe 
@@ -165,6 +208,7 @@ h2{
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .text-generateur{
     background-color: #C4C4C4;
@@ -330,11 +374,20 @@ h2{
 .background-juste-prix{
     background-color: #266C85;
     display: flex;
+    flex-direction: row;
     width: 42.125rem;
     height: 31.25rem;
     border-radius: 0.938rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+.guess{
+    height: 100%;
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 1.563rem;
+    text-align: center;
+    font-weight: 500;
+}
 
 /* 
 
