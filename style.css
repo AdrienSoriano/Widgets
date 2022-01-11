@@ -1,0 +1,369 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0%
+}
+
+/* En-tête, titre + logo */
+
+header{
+    background-color: #266C85;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+h1{
+    margin-left: 20%;
+    font-family: Merriweather;
+    font-size: 5.625rem;
+    color: #CDCDCD;
+}
+
+/* séparation par image */
+
+.background-img1{
+    width: 100%;
+
+}
+
+/*disposition des widgets */
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h2{
+    font-family: Merriweather;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.25rem;
+    color: #266C85;
+}
+#partie-1{
+    align-self: center;
+    text-align: center;
+    display: flex;
+    background-color: #CDCDCD;
+    border-radius: 1.875rem;
+    width: 98%;
+    height: 35rem;
+    margin-top: 1%;
+}
+.partie-1{
+    flex-direction: column;
+}
+
+
+/* 
+
+                widget météo 
+                
+                
+                                        */
+                                        
+
+.meteo{
+    margin-top: 3.875rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    margin-left: -5%;
+}
+.background-meteo{
+    display:flex;
+    background-color: #FFFFFF;
+    width: 21.875rem;
+    height: 20rem;
+    border-radius: 1.875rem;
+    margin-left: 20%;
+}
+
+/* 
+
+                widget Horloge 
+                
+                
+                                        */
+
+
+.horloge{
+    margin-top: 4.563rem;
+    width: 25%;
+}
+.background-horloge{
+    margin-left: 20%;
+    background-color: #FFFFFF;
+    width: 21.343rem;
+    height: 20rem;
+    border-radius: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cadran{
+    position: absolute;
+    height: 48%;
+}
+.rond{
+
+    background-color: #000000;
+    width: 16.5vw;
+    height: 35vh;
+    border-radius: 100%;
+}
+.minutes-container, .hours-container, .seconds-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .hours {
+    position: absolute;
+    background: #FFFFFF;
+    height: 8%;
+    left: 44.2%;
+    top: 125%;
+    transform-origin: 25% 50%;
+    width: 0.5%;
+  }
+  .minutes {
+    position: absolute;
+    background: #FFFFFF;
+    height: 8%;
+    left: 44.2%;
+    top: 125%;
+    transform-origin: 25% 50%;
+    width: 0.5%;
+  }
+/* 
+
+                widget Générateur de mots de passe 
+                
+                
+                                                                 */
+
+
+.generateur-mdp{
+    margin-top: 4.438rem;
+    margin-left: 8%;
+}
+.background-generateur{
+    background-color: #266C85;
+    width: 25.75rem;
+    height: 18.875rem;
+    border-radius: 0.938rem;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.text-generateur{
+    background-color: #C4C4C4;
+    margin-top: 7%;
+    width: 21.625rem;
+    height: 5.75rem;
+    border-radius: 0.938rem;
+}
+.result-generateur{
+    background-color: #C4C4C4;
+    margin-top: 7%;
+    width: 20.313rem;
+    height: 3.25rem;
+    border-radius: 0.938rem;
+}
+.buttons-generateur{
+    width: 50%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+.button-valider-generateur{
+    background-color: #C4C4C4;
+    width: 5.313rem;
+    height: 2.625rem;
+    border-radius: 0.938rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.063rem;
+    text-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+.button-autre-generateur{
+    background-color: #C4C4C4;
+    width: 5.313rem;
+    height: 2.625rem;
+    border-radius: 0.938rem;
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 1.063rem;
+}
+
+/* 
+
+                Section 2
+                
+                
+                                        */
+
+
+#partie-2{
+    display: flex;
+    flex-direction: row;
+    background-color: #CDCDCD;
+    border-radius: 1.875rem;
+    width: 98%;
+    height: 39.063rem;
+    margin-top: 1%;
+    align-self: center;
+}
+.partie-2{
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+/* 
+
+                widget calculatrice 
+                
+                
+                                                 */
+
+
+.calculatrice{
+    align-self: flex-start;
+    margin-left: 10%;
+}
+.background-calculatrice{
+    background-color: #012B43;
+    display: flex;
+    flex-direction: column;
+    width: 24.063rem;
+    height: 31.25rem;
+    border-radius: 1.875rem;
+    padding: 3%;
+}
+.affichage-calculatrice{
+    align-self: center;
+    text-align: right;
+    width: 80%;
+    height: 5.438rem;
+    margin-top: 5%;
+    background-color: #C4C4C4;
+    font-family: Montserrat;
+    font-size: 5rem;
+}
+.boutons{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: repeat(5, 75px);
+    align-self: center;
+}
+.boutons button{
+    margin-top: 40%;
+    margin-left: 9%;
+}
+#C{
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: #A60000;
+    font-family: Montserrat;
+    font-size: 2.813rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 0.938rem;
+}
+.bouton1{
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: #C4C4C4;
+    font-family: Montserrat;
+    font-size: 2.813rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 0.938rem;
+}
+.bouton2{
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: #266C85;
+    font-family: Montserrat;
+    font-size: 2.813rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 0.938rem;
+}
+.bouton3{
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: #266C85;
+    font-family: Montserrat;
+    font-size: 2.813rem;
+    color: #CBDC0B;
+    font-weight: bold;
+    border-radius: 0.938rem;
+}
+
+
+/* 
+
+                widget Juste-prix
+                
+                
+                                                 */
+.juste-prix{
+    align-self: flex-end;
+    padding-left: 25%;
+    padding-bottom: 2%;
+}
+.shadow{
+    text-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+.background-juste-prix{
+    background-color: #266C85;
+    display: flex;
+    width: 42.125rem;
+    height: 31.25rem;
+    border-radius: 0.938rem;
+}
+
+
+/* 
+
+                section 3
+                
+                
+                                        */
+
+
+#partie-3{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: #CDCDCD;
+    border-radius: 1.875rem;
+    width: 98%;
+    height: 35rem;
+    margin-top: 1%;
+    align-self: center;
+}
+
+/* signature */
+
+.copyright{
+    text-align: right;
+    font-family: Merriweather;
+    font-size: 1.563rem;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 1%;
+}
