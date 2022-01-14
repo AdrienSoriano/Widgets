@@ -12,8 +12,9 @@
 <body>
 
     <header>
-        <img class="logo1" src="LK.png" alt="Logo-de-la-page-représentant-un-L-et-un-K">
+        <img class="logo1" src="LK.png" alt="Logo de la page représentant un L et un K">
         <h1>Mes Widgets</h1>
+        <img class="logo2" src="binary-2.png" alt="Logo Binary">
     </header>
     
     <img class="background-img1" src="widgetimg-1.png">
@@ -31,9 +32,28 @@
 
                 <div class="background-meteo">
 
-                    <p class="ville">Besançon</p>
+                    <div class="bloc1">
 
-                    <hr class="separation-meteo">
+                        <input class="ville">
+
+                        <img src="nuage-1.png" class="icone1" alt="">
+
+                        <p class="temperature1"></p>
+
+                        <p class="villeChoisie">Besancon</p>
+
+                    </div>
+
+                    <div class="bloc2">
+
+                        <p class="jour">Demain</p>
+
+                        <img src="nuage-2.png" class="icone2" alt="">
+
+                        <p class="temperature2"></p>
+
+                    </div>
+
 
                 </div>
 
@@ -47,7 +67,6 @@
 
                     <img src="cadran.png" class="cadran" alt="cadran d'une horloge">
 
-                    <div class="rond">
 
                         <div class="clock">
                             <div class="wrap">
@@ -74,13 +93,9 @@
 
                     <input value="" class="result-generateur">
 
-                    <div class="buttons-generateur">
+                    <button class="button-valider-generateur">Valider</button>
 
-                        <button class="button-valider-generateur">Valider</button>
-
-                        <button class="button-autre-generateur">Autre</button>
-
-                    </div>
+                    <button class="button-autre-generateur">Autre</button>
 
                 </div>
 
@@ -92,53 +107,53 @@
 
             <article class="calculatrice">
 
-                <h2 class="partie-2">Calculatrice</h2>
+                <h2 class="calculator">Calculatrice</h2>
 
                 <div class="background-calculatrice">
 
-                    <input type="number" class="affichage-calculatrice">
+                    <input type="text" readonly="readonly" class="affichage-calculatrice">
 
                     <div class="boutons">
                         
-                        <button id="C">C</button>
+                        <button id="C" value="C">C</button>
 
-                        <button class="bouton1">&larr;</button>
+                        <button class="bouton1" value="&larr;">&larr;</button>
                                 
                         <button class="bouton1">√</button>
 
-                        <button class="bouton1">%</button>
+                        <button class="bouton1" value="%">%</button>
 
-                        <button class="bouton2">7</button>
+                        <button class="bouton2" value="7">7</button>
 
-                        <button class="bouton2">8</button>
+                        <button class="bouton2" value="8">8</button>
 
-                        <button class="bouton2">9</button>
+                        <button class="bouton2" value="9">9</button>
 
-                        <button class="bouton1">/</button>
+                        <button class="bouton1" value="/">/</button>
 
-                        <button class="bouton2">4</button>
+                        <button class="bouton2" value="4">4</button>
 
-                        <button class="bouton2">5</button>
+                        <button class="bouton2" value="5">5</button>
 
-                        <button class="bouton2">6</button>
+                        <button class="bouton2" value="6">6</button>
 
-                        <button class="bouton1">x</button>
+                        <button class="bouton1" value="*">x</button>
 
-                        <button class="bouton2">1</button>
+                        <button class="bouton2" value="1">1</button>
 
-                        <button class="bouton2">2</button>
+                        <button class="bouton2" value="2">2</button>
 
-                        <button class="bouton2">3</button>
+                        <button class="bouton2" value="3">3</button>
 
-                        <button class="bouton1">-</button>
+                        <button class="bouton1" value="-">-</button>
 
-                        <button class="bouton2">0</button>
+                        <button class="bouton2" value="0">0</button>
 
-                        <button class="bouton2">.</button>
+                        <button class="bouton2" value=",">.</button>
 
-                        <button class="bouton3">=</button>
+                        <button class="bouton3" value="=">=</button>
 
-                        <button class="bouton1">+</button>
+                        <button class="bouton1" value="+">+</button>
                         
                     </div>
 
@@ -148,11 +163,17 @@
 
             <article class="juste-prix">
 
-                <h2 class="partie-2 shadow">Juste prix €</h2>
+                <h2 class="justePrix">Juste prix €</h2>
 
                 <div class="background-juste-prix">
 
                     <p class="guess">Trouver le juste prix de 0 à 100</p>
+
+                    <input type="numbers" class="guessNumber">
+
+                    <p class="PlusMoins">+ ou -</p>
+
+                    <button class="button-valider-justeprix">Valider</button>
 
                 </div>
 
@@ -164,13 +185,33 @@
 
             <article class="convertisseur-unites">
 
-                <h2 class="partie-3">Convertisseur d'unité</h2>
+                <h2 class="partie-3 convUnit">Convertisseur d'unitées</h2>
+
+                <div class="convertisseur">
+
+                    <h2 class="conv">Convertisseur</h2>
+
+                    <input type="number" class="mm">
+
+                    <input type="text" class="cm">
+
+                </div>
 
             </article>
 
             <article class="tirage">
 
                 <h2 class="partie-3">Tirage aléatoire</h2>
+
+                <div class="backgroundTirage">
+
+                    <h2 class="ploufplouf">Plouf Plouf</h2>
+
+                    <p class="nomTirage"></p>
+
+                    <button class="ploufer">Ploufer</button>
+
+                </div>
 
             </article>
 
